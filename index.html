@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="flickity/flickity.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="/style.min.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.min.css">
+  <title>Waxom template</title>
 </head>
 <body>
   <div class="container">
+
+    <!-- slide-in overlas for side menu on small devices -->
     <div class="slideIn-overlay">
       <div class="hidden-menu">
         <i id="button-back" class="icon ion-md-close"></i>
@@ -28,7 +30,11 @@
         </ul>
       </div>
     </div>
+
+    <!-- navbar stuff -->
     <nav class="navbar-wrapper">
+
+      <!-- absolutely positioned search bar above screen -->
       <div class="searchbar">
         <div class="searchbar-inner">
           <input class="searchbar-input" type="text" placeholder="Start typing...">
@@ -36,6 +42,8 @@
           <i id="search-icon-close" class="search-icon icon ion-md-close"></i>
         </div>
       </div>
+
+      <!-- navbar content -->
       <div class="navbar-inner">
         <div id="navbar-logo">
           <a href="#"><img src="images/logo_dark.png" alt="logo"></a>
@@ -59,6 +67,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- the main landing area, the carousel -->
     <div class="main-carousel">
       <div id="cell1" class="carousel-cell">
         <div class="carousel-cell-textbox">
@@ -85,6 +95,8 @@
         </div>
       </div>
     </div>
+
+    <!-- section following the carousel -->
     <section class="section-features-wrapper">
       <div class="features-inner">
         <a href="#" class="feature-box">
@@ -113,6 +125,8 @@
         </a>
       </div>
     </section>
+
+    <!-- section with the three browser displays -->
     <section class="section-browsers-wrapper">
       <div class="section-browsers-inner">
         <div class="browsers-textbox">
@@ -122,6 +136,8 @@
         <img class="browsers-image" src="images/browsers.png" alt="">
       </div>
     </section>
+
+    <!-- footer -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-textbox">
@@ -133,7 +149,7 @@
     </footer>
   </div>
 
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="flickity/flickity.pkgd.js"></script>
   <script type="text/javascript">
 
     // Carousel Settings
