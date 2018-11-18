@@ -174,7 +174,7 @@
     window.onscroll = _=> adjustNavbar()
 
     const adjustNavbar = _=> {
-      if (document.documentElement.scrollTop > 5) {
+      if (document.documentElement.scrollTop > 5 || document.body.scrollTop > 5) {
         document.querySelector(".navbar-wrapper").classList = "navbar-wrapper navbar-scrolled";
       } else {
         document.querySelector(".navbar-wrapper").className = "navbar-wrapper";
@@ -197,7 +197,7 @@
       setTimeout(function() {
         $overlay.style.opacity = "1";
         $hiddenMenu.style.right = "0";
-      }, 1)
+      }, 15)
     })
 
     $buttonBack.addEventListener("click", (e)=> {
