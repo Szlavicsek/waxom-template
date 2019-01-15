@@ -142,7 +142,7 @@
       <div class="footer-content">
         <div class="footer-textbox">
           <h1 class="footer-h1"><span style="color: #C7B299">Waxom</span> Multipurpose WordPress Theme</h1>
-          <h3 class="footer-h2">Don't Forget to Rare the Template. Thanks so much!</h3>
+          <h3 class="footer-h2">Don't Forget to Rate the Template. Thanks so much!</h3>
         </div>
         <a href="#"><button id="button-purchase" class="button-brown">PURCHASE NOW</button></a>
       </div>
@@ -174,7 +174,7 @@
     window.onscroll = _=> adjustNavbar()
 
     const adjustNavbar = _=> {
-      if (document.documentElement.scrollTop > 5 || document.body.scrollTop > 5) {
+      if (document.documentElement.scrollTop > 5) {
         document.querySelector(".navbar-wrapper").classList = "navbar-wrapper navbar-scrolled";
       } else {
         document.querySelector(".navbar-wrapper").className = "navbar-wrapper";
@@ -197,7 +197,7 @@
       setTimeout(function() {
         $overlay.style.opacity = "1";
         $hiddenMenu.style.right = "0";
-      }, 15)
+      }, 1)
     })
 
     $buttonBack.addEventListener("click", (e)=> {
@@ -207,6 +207,7 @@
         $overlay.classList.remove("overlay-active");
       }, 1000)
     })
+    const atom = "yay"
 
     $overlay.addEventListener("click", (e)=> {
       if (e.target.classList.contains("slideIn-overlay")) {
