@@ -1,9 +1,12 @@
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-  
+for (var i = 0; i < array.length; i++) {
+  array[i]
+}
+for (var i = 0; i < array.length; i++) {
+  array[i]
 }
 
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
+if (condition) {
+
+} else {
   
 }
